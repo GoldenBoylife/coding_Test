@@ -16,6 +16,7 @@ using namespace std;
 	 
 	 
 */
+#if 0
 int main() {
 	int a,b,c;
 	int n;
@@ -34,12 +35,23 @@ int main() {
 		cout << arr[i]<<endl;
 	}
 }
-//int main(){
-//	int a,b,c;
-//	string str;
-//	int arr[10];
-//	
-//	str = to_string(a*b*c)
-//	
-//	
-//}
+#endif
+
+int main(){
+	int a,b,c;
+	cin >>a>>b>>c;
+	string str;
+	int arr[10]={0};
+	
+	str = to_string(a*b*c);
+//	cout << str <<endl;
+	for(char ch :str){
+		arr[ch-'0']++;
+	}
+		
+	for(int ch:arr){
+		cout << ch <<endl;
+	}
+		
+	
+}
